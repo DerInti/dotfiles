@@ -3,6 +3,10 @@ set nocompatible
 " Enable syntax highlighting
 syntax on
 filetype plugin indent on
+filetype plugin on
+" and Completion = <ctrl-N>
+set omnifunc=syntaxcomplete#Complete
+
 "Color me fancy
 colorscheme molokai
 
