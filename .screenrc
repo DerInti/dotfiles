@@ -1,0 +1,22 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][ %{B}%Y-%m-%d %{W}%c %{g}]'
+shelltitle '$ |bash'
+startup_message off
+
+# All Colors Are Beautiful
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
+defbce "on"
+
+# Autowindows
+screen -t arch01 0
+screen -t arch02 1
+screen -t arch03 2
+screen -t raspi  3
+screen -t tropfsteinhoehle 4
+screen -t hackberry 5
+screen -t bash 6
+screen -t bash 7
+screen -t bash 8
+screen -t bash 9
+select 0
