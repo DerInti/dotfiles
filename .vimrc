@@ -19,7 +19,8 @@ set ruler
 set laststatus=2
 " Set encoding
 set encoding=utf-8
-
+" set 256 color terminal
+set t_Co=256
 " Whitespace stuff
 set nowrap
 set tabstop=4
