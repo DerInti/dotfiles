@@ -17,6 +17,8 @@ execute pathogen#infect()
 let g:jedi#completions_command = "<C-N>"
 let g:jedi#documentation_command = ""
 let g:jedi#popup_select_first = 1
+let g:jedi#popup_on_dot = 0
+
 " Add line numbers
 set number
 set ruler
