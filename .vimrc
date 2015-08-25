@@ -18,7 +18,10 @@ let g:jedi#completions_command = "<C-N>"
 let g:jedi#documentation_command = ""
 let g:jedi#popup_select_first = 1
 let g:jedi#popup_on_dot = 0
-
+let g:jedi#force_py_version = 3
+" Settings for vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_section_b = airline#section#create('%{virtualenv#statusline()}')
 " Add line numbers
 set number
 set ruler
@@ -81,10 +84,14 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79 complet
 
 " when FileType is python <F9> runs the script :-)
 au FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
-
+au FileType python nnoremap <F8> :SyntasticCheck<cr>
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
+" own keybindings
+nnoremap <F12> gT
+nnoremap <F11> gt
+nnoremap <F10> :tabnew<cr>
+nnoremap <F4> :tabclose<cr>
 " ctrp custom ignores
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.eunit$',
