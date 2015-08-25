@@ -88,8 +88,8 @@ au FileType python nnoremap <F8> :SyntasticCheck<cr>
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 " own keybindings
-nnoremap <F12> gT
-nnoremap <F11> gt
+nnoremap <F11> gT
+nnoremap <F12> gt
 nnoremap <F10> :tabnew<cr>
 nnoremap <F4> :tabclose<cr>
 " ctrp custom ignores
